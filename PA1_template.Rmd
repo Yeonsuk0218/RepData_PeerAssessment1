@@ -3,6 +3,7 @@ title: "Reproducible Research/Peer-graded Assignment: Course Project1"
 author: "yeonsuk, kim"
 date: "2022-11-19"
 output: html_document
+# output: md_document
 ---
 
 ```{r load_package}
@@ -29,7 +30,7 @@ mutate_activity <- NULL
 
 ## A. Loading and preprocessing the data
 
-``` {r readActivity function, echo=TRUE}
+``` {r readActivity, echo=TRUE}
 
 ##--------------------
 ## read activity.csv file
@@ -121,7 +122,7 @@ activity <- readActivity()
 #### 2. Make a histogram of the total number of steps taken each day.
 #### 3. Calculate and report the mean and median of the total number of steps taken per day.
 
-``` {r createHistogram function, echo=TRUE}
+``` {r createHistogram, echo=TRUE}
 
 ##--------------------
 ## Create Histogram()
@@ -169,7 +170,7 @@ createHistogram(activity)
 #### 1. Make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
-``` {r createTimeSeriesPlot function, echo=TRUE}
+``` {r createTimeSeriesPlot, echo=TRUE}
 
 ##--------------------
 ## Create TimeSeries Plot()
@@ -230,7 +231,7 @@ createTimeSeriesPlot(activity)
 ####    Do these values differ from the estimates from the first part of the assignment?
 ####    What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
-``` {r imputeMissingValues function, echo=TRUE}
+``` {r imputeMissingValues, echo=TRUE}
 ##--------------------
 ## D. Imputing missing values
 ##--------------------
@@ -351,7 +352,7 @@ mutate_activity <- imputeMissingValues(activity)  # mutate NAs
 
 ## E. Are there differences in activity patterns between weekdays and weekends?
 
-``` {r createTimeSeriesPlotForWeekdaysWeekends function, echo=TRUE}
+``` {r createTimeSeriesPlotForWeekdaysWeekends, echo=TRUE}
 
 ##--------------------
 ## E. Are there differences in activity patterns between weekdays and weekends?
